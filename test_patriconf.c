@@ -19,29 +19,13 @@ int main(int argc, char **argv)
         {
             printf("Writing frequency: ");
             fs++;
-            set_fs(&c, fs);
             if (fs > 1000)
             {
                 fs = 0;
             }
+            set_fs(&c, fs);
             fs = get_fs(&c);
             printf("%d \n", fs);
-        }
-        else if (*argv[1] == 't')
-        {
-            printf("Access frequency: ");
-            fs++;
-            pthread_mutex_lock(&(c.lock));
-            c.fluid->fs = fs;
-            if (fs > 1000)
-            {
-                fs = 0;
-            }
-            printf("%d", fs);
-            fflush(stdout);
-            usleep(1 * 1000 * 1000);
-            pthread_mutex_unlock(&(c.lock));
-            printf(".\n");
         }
         else if (*argv[1] == 'r')
         {

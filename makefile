@@ -6,7 +6,6 @@ patriconf: patriconf.c
 test: test_patriconf.c patriconf.c
 	$(CC) test_patriconf.c -Wall -g -o test -lpatriconf -L. -lpthread
 
-
 %.o: %.c
 	$(CC)  -Wall -g -c $<
 
@@ -15,3 +14,4 @@ clean:
 	rm -rf *.so
 	rm -rf *.o
 	rm -f test
+

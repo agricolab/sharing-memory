@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "patriconf.h": "c"
+        "patriconf.h": "c",
+        "pthread.h": "c"
     }
 }

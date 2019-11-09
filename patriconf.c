@@ -1,4 +1,4 @@
-#include "patconf.h"
+#include "patriconf.h"
 static void bind_conf(conf *c);
 
 extern conf register_conf()

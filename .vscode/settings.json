@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "patriconf.h": "c",
-        "pthread.h": "c"
+        "pthread.h": "c",
+        "types.h": "c",
+        "shared_mutex": "c",
+        "stdio.h": "c",
+        "shared_mutex.h": "c",
+        "stddef.h": "c"
     }
 }

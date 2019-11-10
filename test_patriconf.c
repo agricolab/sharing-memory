@@ -13,6 +13,12 @@ int main(int argc, char **argv)
     }
     printf("Register configuration\n");
     conf c = register_conf();
+    if (*argv[1] == 'c')
+    {
+        unregister_conf(&c);
+        return 0;
+    };
+
     while (1)
     {
         if (*argv[1] == 'w')
